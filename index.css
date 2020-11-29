@@ -1,4 +1,4 @@
-/* CUSTOM FONTS */
+/* CUSTOM FONTS & TEXT STYLING */
 @font-face {
   font-family: NotoSansKR-Thin;
   src: url('Fonts/NotoSansKR/NotoSansKR-Thin.otf') format("opentype");
@@ -72,7 +72,11 @@ p {
   text-align: left;
 }
 
-/* CUSTOM DIV STYLING */
+a {
+  width: auto;
+}
+
+/* INTRO BOX STYLING */
 .main {
   width: 100%;
 }
@@ -117,6 +121,7 @@ p {
   min-height: 100%;
 }
 
+/* PROJECT DISPLAY STYLING */
 .sl-left {
   display: flex;
   justify-content: center;
@@ -144,10 +149,6 @@ p {
   border: 0.01px ridge #C5CCD3;
 }
 
-a {
-  width: auto;
-}
-
 .scroll-down {
   position: absolute;
   bottom: 0;
@@ -161,26 +162,7 @@ a {
   left: 48%;
 }
 
-.website-preview {
-  width: 100%;
-  height: fit-content;
-  min-height: 100vh;
-  max-height: 100vh;
-  -ms-zoom: 0.7;
-  -moz-transform: scale(0.7);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.7);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.7);
-  -webkit-transform-origin: 0 0;
-}
-
-.conclusion {
-  padding: 3rem;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
+/* FOOTER STYLING */
 .sl-footer {
   margin-left: 5rem;
 }
