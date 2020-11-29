@@ -295,7 +295,7 @@ a {
 }
 
 /* 4K HANDLERS - 3840 x 2160 */
-@media (min-width: 2000px) {
+@media (min-width: 2250px) {
   .sl-1 {
     font-size: 5.5rem;
   }
