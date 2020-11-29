@@ -45,7 +45,10 @@
           </div>
         </div>
         <div class="lightbulb">
-          <a href="#" onclick="switch_mode()">
+          <a href="#"
+             onclick="switch_mode()"
+             onmouseover="light_up()"
+             onmouseout="light_off()">
             <img id="lightbulb" src="Resources/lightbulb-regular-dark.svg"/>
           </a>
         </div>
@@ -105,6 +108,19 @@
       };
       window.addEventListener('resize', afterOrientationChange);
     });
+  </script>
+
+  <script>
+    function light_up() {
+      document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-on.svg';
+    }
+    function light_off() {
+      if ($(':root').css('--sl-main') == ' #121212') {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-dark.svg';
+      } else {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-light.svg';
+      }
+    }
   </script>
 
   <script>

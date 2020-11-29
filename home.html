@@ -41,7 +41,10 @@
           </a>
         </div>
         <div class="lightbulb">
-          <a href="#" onclick="switch_mode()">
+          <a href="#"
+             onclick="switch_mode()"
+             onmouseover="light_up()"
+             onmouseout="light_off()">
             <img id="lightbulb" src="Resources/lightbulb-regular-dark.svg"/>
           </a>
         </div>
@@ -222,6 +225,19 @@
         document.getElementById('email_svg').src = 'Resources/envelope-solid-dark.svg';
         document.getElementById('github_svg').src = 'Resources/github-brands-dark.svg';
         document.getElementById('linkedin_svg').src = 'Resources/linkedin-in-brands-dark.svg';
+      }
+    }
+  </script>
+
+  <script>
+    function light_up() {
+      document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-on.svg';
+    }
+    function light_off() {
+      if ($(':root').css('--sl-main') == ' #121212') {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-dark.svg';
+      } else {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-light.svg';
       }
     }
   </script>
