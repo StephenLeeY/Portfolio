@@ -199,7 +199,7 @@ a {
 }
 
 /* MOBILE HANDLERS */
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .main {
     overflow-x: hidden;
   }
@@ -239,6 +239,23 @@ a {
   .intro-text {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .scroll-down {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  .header {
+    padding: 0;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .header {
+    display: flex;
+    flex-direction: row;
   }
 }
 
