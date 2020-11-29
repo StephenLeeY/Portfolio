@@ -1,0 +1,214 @@
+/* GENERAL STYLING */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 400!important;
+  letter-spacing: 1px;
+}
+
+#Title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-style: italic!important;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+#problem {
+  padding-bottom: 3rem
+}
+
+btn {
+  font-size: 3rem;
+}
+
+/* GENERAL CAROUSEL STYLING */
+
+.carousel {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-caption > a {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.container-text {
+  z-index: 10;
+  background-color: rgba(0,0,0, 0.4);
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  color: white;
+  border: 2px solid #f1f1f1;
+}
+
+/* TOP CAROUSEL STYLING */
+
+.first-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(1.5px);
+}
+
+.second-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(1.75px);
+}
+
+#First {
+  height: 50rem;
+  background-color: #777;
+}
+#First > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 50rem;
+}
+
+#Second {
+  height: 50rem;
+  background-color: #777;
+}
+#Second > img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 50rem;
+}
+
+/* CAROUSEL ARROW STYLING */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '⮞';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '⮜';
+  font-size: 55px;
+  color: black;
+}
+
+/* SECTION STYLING */
+
+#lofi {
+  height: fit-content;
+}
+
+.bullet {
+  text-align: left;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 > #r {
+  color: #DD1E2F;
+}
+
+.marketing .col-lg-4 > #g {
+  color: #218559;
+}
+
+.marketing .col-lg-4 > #b {
+  color: #06A2CB;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE STYLING */
+
+@media (max-width: 800px) {
+  #First > img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #Second > img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 2559px) {
+  .first-slide {
+    object-fit: cover;
+  }
+
+  .second-slide {
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}

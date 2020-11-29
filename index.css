@@ -1,1 +1,273 @@
-/* Put your style information here! */
+/* CUSTOM FONTS */
+@font-face {
+  font-family: NotoSansKR-Thin;
+  src: url('Fonts/NotoSansKR/NotoSansKR-Thin.otf') format("opentype");
+}
+
+@font-face {
+  font-family: NotoSansKR-Light;
+  src: url('Fonts/NotoSansKR/NotoSansKR-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: NotoSansKR-Regular;
+  src: url('Fonts/NotoSansKR/NotoSansKR-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: NotoSansKR-Bold;
+  src: url('Fonts/NotoSansKR/NotoSansKR-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: NotoSansKR-Black;
+  src: url('Fonts/NotoSansKR/NotoSansKR-Black.otf') format("opentype");
+}
+
+.sl-thin {
+  font-family: NotoSansKR-Thin;
+}
+
+.sl-bold {
+  font-family: NotoSansKR-Bold;
+}
+
+.sl-1 {
+  font-size: 3.5rem;
+}
+
+.sl-2 {
+  font-size: 2.25rem;
+}
+
+.sl-3 {
+  font-size: 1.5rem;
+}
+
+.sl-center {
+  text-align: center;
+}
+
+.sl-bold, .sl-2, .sl-center {
+  margin: 0;
+}
+
+.sl-wrap-style {
+  width: 85%;
+}
+
+/* NATIVE STYLING */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  height: fit-content;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  text-align: left;
+}
+
+/* CUSTOM DIV STYLING */
+.main {
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.sl-logo {
+  height: auto;
+  width: 100%;
+}
+
+.sl-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sl-navtext {
+  color: black;
+  padding: 1rem;
+}
+
+.sl-navtext:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.intro_box {
+  width: 100%;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  min-height: 100%;
+}
+
+.sl-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 5rem;
+}
+
+.sl-right {
+  width: 70%;
+  margin: 3rem;
+  margin-left: 0;
+}
+
+.sl-image-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sl-image {
+  border-radius: 20px;
+  border: 0.01px ridge #C5CCD3;
+}
+
+a {
+  width: auto;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+}
+
+.scroll-down-a {
+  position: relative;
+  left: 48%;
+}
+
+.website-preview {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  max-height: 100vh;
+  -ms-zoom: 0.7;
+  -moz-transform: scale(0.7);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.7);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.7);
+  -webkit-transform-origin: 0 0;
+}
+
+.conclusion {
+  padding: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sl-footer {
+  margin-left: 5rem;
+}
+
+.footer-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* BOOTSTRAP OVERRIDES */
+#intro_box, .col {
+  padding: 0;
+}
+
+/* MOBILE HANDLERS */
+@media (max-width: 600px) {
+  .main {
+    overflow-x: hidden;
+  }
+
+  .sl-1 {
+    font-size: 1.25rem;
+  }
+
+  .sl-2 {
+    font-size: 1rem;
+  }
+
+  .sl-3 {
+    font-size: 0.75rem;
+  }
+
+  .sl-left {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .project-display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .sl-logo {
+    text-align: center;
+  }
+
+  .intro-text {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+/* DESKTOP HANDLERS */
+@media (max-width: 1467px) {
+  .sl-1 {
+    font-size: 1.75rem;
+  }
+
+  .sl-2 {
+    font-size: 1.25rem;
+  }
+
+  .sl-3 {
+    font-size: 1rem;
+  }
+}
+
+/* 4K HANDLERS - 3840 x 2160 */
+@media (min-width: 2000px) {
+  .sl-1 {
+    font-size: 5.5rem;
+  }
+
+  .sl-2 {
+    font-size: 4.5rem;
+  }
+
+  .sl-3 {
+    font-size: 3.5rem;
+  }
+}

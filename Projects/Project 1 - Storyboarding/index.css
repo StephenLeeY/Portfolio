@@ -1,0 +1,177 @@
+/* Color Scheme: f8f9fa, e9ecef, dee2e6, ced4da, adb5bd, 6c757d, 495057, 343a40, 212529  */
+body {
+  font-family: 'Peddana', serif;
+  background-image: linear-gradient(#adb5bd, #212529, #adb5bd, #212529);
+}
+
+.Section {
+  background-image: linear-gradient(#ced4da, #f8f9fa, #ced4da);
+  border-radius: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.Intro {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: -4%;
+  margin-bottom: 2.5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: linear-gradient(#ced4da, #f8f9fa, #ced4da);
+  border-radius: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 4vw;
+  text-align: center;
+  background-image: linear-gradient(#ced4da, #f8f9fa, #ced4da);
+  line-height: 90%;
+  border-radius: 25px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 5%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -2%;
+  margin-bottom: 3%;
+  border: 5px double #495057;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+img[src="https://i.ibb.co/BHDLN8F/Device-Sketch.png"] {
+  max-width: 1000px;
+  max-height: 488px;
+}
+
+h2 {
+  font-size: 3vw;
+  text-align: left;
+  margin-left: 2.5%;
+  margin-top: -3.5%;
+}
+
+h3 {
+  font-size: 2vw;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -3.5%;
+}
+
+ol {
+  font-size: 1.5vw;
+  text-align: left;
+  margin-left: 7.5%;
+  margin-top: -2.5%;
+  margin-bottom: 4%;
+}
+
+.DepQ {
+  margin-top: 2.5%;
+  margin-left: -7.5%;
+  margin-bottom: -4%;
+}
+
+p {
+  font-size: 1.25vw;
+  text-align: center;
+  margin-top: -1.5%;
+  margin-bottom: 3%;
+}
+
+img src=["https://i.ibb.co/YkphZHM/emp1.png"] {
+  max-width: 1250px;
+  max-height: 694px;
+}
+
+.Image_Description {
+  text-align: left;
+  font-size: 1.25vw;
+  margin-top: 1.5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 4%;
+}
+
+img src=["https://i.ibb.co/wBxYfwT/emp2.png"] {
+  max-width: 1250px;
+  max-height: 694px;
+}
+
+img src=["https://i.ibb.co/6s29gJ2/output-onlinepngtools.png"] {
+  max-width: 1250;
+  max-height: 563px;
+}
+
+/* Other platform support */
+
+@media screen and (max-width: 1024px), screen and (max-height: 700px) {
+  img[src="https://i.ibb.co/BHDLN8F/Device-Sketch.png"] {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  img[src="https://i.ibb.co/YkphZHM/emp1.png"] {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  img[src="https://i.ibb.co/wBxYfwT/emp2.png"] {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  img[src="https://i.ibb.co/6s29gJ2/output-onlinepngtools.png"] {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  .Section {
+    border-radius: 5px;
+  }
+
+  .Intro {
+    font-size: 4vw;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 6vw;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  ol {
+    font-size: 3vw;
+    margin-left: 0%;
+    margin-top: -5%;
+  }
+
+  .DepQ {
+    margin-top: 5%;
+    margin-left: -5%;
+  }
+
+  p {
+    font-size: 2.5vw;
+  }
+
+  .Image_Description {
+    font-size: 2.5vw;
+  }
+}

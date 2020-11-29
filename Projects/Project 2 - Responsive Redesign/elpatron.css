@@ -1,0 +1,306 @@
+p {
+  margin: 0;
+}
+
+a {
+	background-color: transparent;
+  text-decoration: none;
+  color : #000000;
+  font-size: 32px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-link:hover {
+  color: #155966;
+}
+
+.desktop {
+	width: 100%;
+	background-color: #fffef5;
+}
+
+.TopScreen {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 75px);
+  width: 100vw;
+}
+
+/* TOP NAVBAR STYLING */
+
+#TopNav {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+  padding-left: 10rem;
+  flex-wrap: nowrap;
+  align-self: center;
+}
+
+#Order {
+  white-space: nowrap;
+}
+
+#OrderLink {
+  background-color: #D64933;
+  border-radius: 2px;
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+}
+
+#Order:hover #OrderLink {
+  background-color: #772418;
+}
+
+/* LOGO STYLING */
+
+#Logo {
+  font-family: 'Flamenco';
+  padding: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+#TopLogo {
+  font-size: 48px;
+}
+
+#BotLogo {
+  font-size: 24px;
+}
+
+#LogoLink {
+  background-color: transparent;
+  text-decoration: none;
+  color : #000000;
+}
+
+/* BACKGROUND IMAGE STYLING */
+
+#FajitasDiv {
+  height: 100%;
+}
+
+#Fajitas {
+  object-fit: cover;
+  max-width: 100vw;
+  height: calc(100vh - 75px - 156px);
+}
+
+/* FOOTER */
+
+#Footer {
+  background-color: #FFD275;
+  height: 75px;
+  line-height: 75px;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#sm {
+  margin: 0;
+}
+
+#fb {
+  background: url("Resources/facebook.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+}
+
+#ig {
+  background: url("Resources/instagram.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+}
+
+#ContactButton {
+  background-color: #D64933;
+  border-radius: 2px;
+  margin-left: auto;
+  padding-bottom: 3rem;
+  display: inline-block;
+  flex-wrap: nowrap;
+  width: 193px;
+  height: 54px;
+}
+
+#ContactLink {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  flex-wrap: nowrap;
+  width: 193px;
+  height: 54px;
+  margin-bottom: -5%;
+}
+
+#ContactButton:hover {
+  background-color: #772418;
+}
+
+#DropDown {
+  display: none;
+}
+
+.ham {
+  width: 50px;
+  height: 10px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#Footer > #mobile {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+  position: absolute;
+  top: 1.25vh;
+  left: 1.25vw;
+  width: 97.5vw;
+  height: 97.5vh;
+  padding: 0;
+  margin: 0;
+  background-color: #fffef5;
+  border: 1px solid black;
+  z-index: 2!important;
+}
+
+.nav-mobile {
+  text-align: center;
+}
+
+.flex-mobile {
+  height: 97.5vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+
+#mobile-icon {
+  width: fit-content;
+  height: fit-content;
+}
+
+.mobile-fb {
+  float: right;
+}
+
+.mobile-ig {
+  float: left;
+}
+
+#exit {
+  position: absolute;
+  right: 1.5vw;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+@media (max-width: 1467px) {
+  #TopNav {
+    display: none;
+  }
+
+  #DropDown {
+    display: inline-block;
+    height: 8%;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    outline: none;
+    box-shadow: none;
+  }
+
+  #Footer * {
+    display: none;
+  }
+
+  #Footer {
+    background-color: #D64933;
+  }
+
+  #ContactButton {
+    position: absolute;
+    display: none;
+  }
+
+  #Footer > #mobile {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    flex-wrap: nowrap;
+    min-height: 100%;
+    min-width: 100vw;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  #FajitasDiv {
+    height: 100vh;
+    max-width: 100%;
+  }
+
+  #Footer {
+    line-height: 32.5px;
+  }
+}
+
+@media (max-width: 300px) {
+  #TopLogo {
+    font-size: 24px;
+  }
+
+  #BotLogo {
+    font-size: 12px;
+  }
+
+  #DropDown {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #Fajitas {
+    height: calc(100vh - 125px);
+  }
+}
+
+@media (max-height: 666px) {
+  #sm-mobile {
+    display: none;
+  }
+}

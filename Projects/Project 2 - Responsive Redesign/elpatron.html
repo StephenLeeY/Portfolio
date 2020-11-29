@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>El Patron 2.0</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="elpatron.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="utf-8">
+  </head>
+
+  <body>
+    <div class="desktop">
+      <div class="TopScreen">
+        <div class="container-fluid row" id="TopBar">
+          <div class="d-inline-flex flex-column" id="Logo">
+            <a href="http://elpatronqueens.com/" id="LogoLink">
+              <p class="text-center" id="TopLogo">El Patron</p>
+              <p class="text-center" id="BotLogo">Mexican Grill</p>
+            </a>
+          </div>
+          <ul class="nav nav-fill col" id="TopNav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.elpatronqueens.com/Location.tpl?cart=16026352593458238">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.elpatronqueens.com/ShowMenu.tpl?cart=16026352593458238">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.elpatronqueens.com/AboutUs.tpl?cart=16026352593458238">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.elpatronqueens.com/ShowPage.tpl?vShowPage=102668">Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.elpatronqueens.com/ContactUs.tpl?cart=16026352593458238">Contact</a>
+            </li>
+            <li class="nav-item" id="Order">
+              <a class="nav-link" id="OrderLink" href="https://www.elpatronqueens.com/OrderLocations.tpl?cart=16026352593458238">Order Online</a>
+            </li>
+          </ul>
+          <button id="DropDown" class="navbar-toggler" type="button" onclick="show_menu()">
+            <div class="ham"></div>
+            <div class="ham"></div>
+            <div class="ham"></div>
+          </button>
+      </div>
+      <div class="d-sm-flex flex-column" id="FajitasDiv">
+        <img class="img-responsive fit-image" src="Resources/food.jpg" alt="Fajitas" id="Fajitas">
+      </div>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-expand-sm" id="Footer">
+      <ul class="row" id="sm">
+        <li class="col">
+          <a class="btn btn-primary" id="fb" href="https://www.facebook.com/pages/El-Patron-Mexican-Grill/115982025090317"></a>
+        </li class="col">
+        <li>
+          <a class="btn btn-primary" id="ig" href="https://www.instagram.com/explore/locations/6644404/el-patron-mexican-grill/?hl=en"></a>
+        </li>
+      </ul>
+      <div class="d-inline-flex" id="ContactButton">
+        <a class="nav-link align-self-center" id="ContactLink" href="https://www.elpatronqueens.com/ContactUs.tpl?cart=16026352593458238">Contact Us</a>
+      </div>
+      <a id="mobile" class="nav-link justify-content-center" href="https://www.elpatronqueens.com/OrderLocations.tpl?cart=16026352593458238">Order Online</a>
+    </nav>
+
+    <div class="container-fluid" id="mobile_menu">
+      <div id="exit" onclick="close_menu()">✗</div>
+      <ul class="nav flex-column flex-mobile nav-fill">
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/Location.tpl?cart=16026352593458238">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/ShowMenu.tpl?cart=16026352593458238">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/AboutUs.tpl?cart=16026352593458238">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/ShowPage.tpl?vShowPage=102668">Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/ContactUs.tpl?cart=16026352593458238">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/YourAccount.tpl?cart=16026352593458238">Your Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/OrderOnline.tpl?cart=16026352593458238">Your Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/Help.tpl?cart=16026352593458238">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-mobile" href="https://www.elpatronqueens.com/PrivacyPolicy.tpl?cart=16026352593458238">Privacy</a>
+        </li>
+        <div class="nav-item row" id="sm-mobile">
+          <li class="col">
+            <a class="btn btn-primary mobile-fb" id="fb" href="https://www.facebook.com/pages/El-Patron-Mexican-Grill/115982025090317"></a>
+          </li>
+          <li class="col">
+            <a class="btn btn-primary mobile-ig" id="ig" href="https://www.instagram.com/explore/locations/6644404/el-patron-mexican-grill/?hl=en"></a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <script>
+      function show_menu() {
+        document.getElementById("mobile_menu").style.display = "block";
+        document.getElementById("Footer").style.zIndex = -1;
+      }
+
+      function close_menu() {
+        document.getElementById("mobile_menu").style.display = "none";
+        document.getElementById("Footer").style.zIndex = 1;
+      }
+    </script>
+  </body>
+</html>
