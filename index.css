@@ -177,6 +177,11 @@ a {
 .scroll-down-a {
   position: relative;
   left: 48%;
+  bottom: 1rem;
+}
+
+.down-arrow {
+  width: 2rem;
 }
 
 /* FOOTER STYLING */
@@ -251,6 +256,14 @@ a {
   .lightbulb {
     width: 1.25rem;
   }
+
+  .scroll-down-a {
+    bottom: 1.25rem;
+  }
+
+  .down-arrow {
+    width: 1.25rem;
+  }
 }
 
 @media (max-width: 850px) and (orientation: landscape) {
@@ -293,5 +306,17 @@ a {
 
   .sl-3 {
     font-size: 3.5rem;
+  }
+
+  .lightbulb {
+    width: 5rem;
+  }
+
+  .scroll-down-a {
+    bottom: 5rem;
+  }
+
+  .down-arrow {
+    width: 5rem;
   }
 }
