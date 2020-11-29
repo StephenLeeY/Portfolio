@@ -1,0 +1,82 @@
+/* NATIVE STYLING */
+a {
+  width: auto;
+}
+
+/* MAIN OVERRIDES */
+.sl-left {
+  width: 40%;
+  margin: 3rem;
+}
+
+.sl-right {
+  width: 60%;
+  margin: 3rem;
+  padding-top: 3rem;
+}
+
+.sl-center {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.about-me {
+  width: 100%;
+}
+
+.main {
+  position: relative;
+}
+
+#sl-divider {
+  width: 100%;
+  position: absolute;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.intro_box {
+  margin-bottom: 7.5rem;
+}
+
+/* BOOTSTRAP OVERRIDES */
+#footer, .row {
+  margin: 0;
+}
+
+/* MOBILE HANDLERS */
+@media (max-width: 850px), (max-width: 1467px) {
+  .sl-left {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sl-right {
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+}
+
+/* DESKTOP HANDLERS */
+@media (max-width: 1467px) {
+}
+
+/* 4K HANDLERS - 3840 x 2160 */
+@media (min-width: 2250px) {
+}
