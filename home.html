@@ -39,7 +39,12 @@
         </div>
         <div class="scroll-down">
           <a href="#start" class="scroll-down-a">
-            <img class="down-arrow" src="Resources/down-arrow.png" alt="down-arrow"/>
+            <img class="down-arrow" id="down_arrow" src="Resources/down-arrow-light.png" alt="down-arrow"/>
+          </a>
+        </div>
+        <div class="lightbulb">
+          <a href="#" onclick="switch_mode()">
+            <img id="lightbulb" src="Resources/lightbulb-regular-light.svg"/>
           </a>
         </div>
       </div>
@@ -160,13 +165,13 @@
           <!-- FONT AWESOME ICONS -->
           <a class="footer-icon"></a>
           <a class="footer-icon" href="mailto:[insert_email]">
-            <img src="Resources/envelope-solid.svg"/>
+            <img id="email_svg" src="Resources/envelope-solid-light.svg"/>
           </a>
           <a class="footer-icon" href="https://github.com/[insert_username]">
-            <img src="Resources/github-brands.svg"/>
+            <img id="github_svg" src="Resources/github-brands-light.svg"/>
           </a>
           <a class="footer-icon" href="https://www.linkedin.com/in/[insert_link]">
-            <img src="Resources/linkedin-in-brands.svg"/>
+            <img id="linkedin_svg" src="Resources/linkedin-in-brands-light.svg"/>
           </a>
         </div>
       </div>
@@ -177,7 +182,6 @@
   <script>
     var intro_box = document.getElementById("intro_box");
     intro_box.style.height = window.innerHeight + "px";
-    console.log(window.innerHeight);
 
     // Mobile device orientation change handler.
     // Credit for listener structure goes to: https://stackoverflow.com/a/49383279
@@ -192,6 +196,30 @@
       };
       window.addEventListener('resize', afterOrientationChange);
     });
+
+    function switch_mode() {
+      let temp = $(':root').css('--sl-main');
+      $(':root').css('--sl-main', $(':root').css('--sl-sub'));
+      $(':root').css('--sl-sub', temp);
+      let temp2 = $(':root').css('--sl-main-rgba');
+      $(':root').css('--sl-main-rgba', $(':root').css('--sl-sub-rgba'));
+      $(':root').css('--sl-sub-rgba', temp);
+
+      let light_dark = (temp == ' #FFFFFF');
+      if (light_dark) {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-dark.svg';
+        document.getElementById('down_arrow').src = 'Resources/down-arrow-dark.png';
+        document.getElementById('email_svg').src = 'Resources/envelope-solid-dark.svg';
+        document.getElementById('github_svg').src = 'Resources/github-brands-dark.svg';
+        document.getElementById('linkedin_svg').src = 'Resources/linkedin-in-brands-dark.svg';
+      } else {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-light.svg';
+        document.getElementById('down_arrow').src = 'Resources/down-arrow-light.png';
+        document.getElementById('email_svg').src = 'Resources/envelope-solid-light.svg';
+        document.getElementById('github_svg').src = 'Resources/github-brands-light.svg';
+        document.getElementById('linkedin_svg').src = 'Resources/linkedin-in-brands-light.svg';
+      }
+    }
   </script>
 
   <!-- BOOSTRAP IMPORT -->
