@@ -1,9 +1,9 @@
 /* GLOBAL VARIABLES */
 :root {
-  --sl-main: #FFFFFF;
-  --sl-sub: #121212;
-  --sl-main-rgba: rgba(255, 255, 255, 0.1);
-  --sl-sub-rgba: rgba(18, 18, 18, 0.1);
+  --sl-main: #121212;
+  --sl-sub: #FFFFFF;
+  --sl-main-rgba: rgba(18, 18, 18, 0.1);
+  --sl-sub-rgba: rgba(255, 255, 255, 0.1);
 }
 
 /* CUSTOM FONTS & TEXT STYLING */

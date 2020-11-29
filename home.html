@@ -39,17 +39,19 @@
         </div>
         <div class="scroll-down">
           <a href="#start" class="scroll-down-a">
-            <img class="down-arrow" id="down_arrow" src="Resources/down-arrow-light.png" alt="down-arrow"/>
+            <img class="down-arrow" id="down_arrow" src="Resources/down-arrow-dark.png" alt="down-arrow"/>
           </a>
         </div>
         <div class="lightbulb">
           <a href="#" onclick="switch_mode()">
-            <img id="lightbulb" src="Resources/lightbulb-regular-light.svg"/>
+            <img id="lightbulb" src="Resources/lightbulb-regular-dark.svg"/>
           </a>
         </div>
       </div>
 
-      <div class="col" id="start">
+      <hr class="featurette-divider" id="start">
+
+      <div class="col">
         <p class="sl-bold sl-1 sl-center">October 6th, 2020</p>
         <div class="project-display row justify-content-center">
           <div class="sl-left">
@@ -165,13 +167,13 @@
           <!-- FONT AWESOME ICONS -->
           <a class="footer-icon"></a>
           <a class="footer-icon" href="mailto:[insert_email]">
-            <img id="email_svg" src="Resources/envelope-solid-light.svg"/>
+            <img id="email_svg" src="Resources/envelope-solid-dark.svg"/>
           </a>
           <a class="footer-icon" href="https://github.com/[insert_username]">
-            <img id="github_svg" src="Resources/github-brands-light.svg"/>
+            <img id="github_svg" src="Resources/github-brands-dark.svg"/>
           </a>
           <a class="footer-icon" href="https://www.linkedin.com/in/[insert_link]">
-            <img id="linkedin_svg" src="Resources/linkedin-in-brands-light.svg"/>
+            <img id="linkedin_svg" src="Resources/linkedin-in-brands-dark.svg"/>
           </a>
         </div>
       </div>
@@ -196,28 +198,32 @@
       };
       window.addEventListener('resize', afterOrientationChange);
     });
+  </script>
 
+  <script>
+    // Light/Dark mode switch handler.
     function switch_mode() {
       let temp = $(':root').css('--sl-main');
       $(':root').css('--sl-main', $(':root').css('--sl-sub'));
       $(':root').css('--sl-sub', temp);
+
       let temp2 = $(':root').css('--sl-main-rgba');
       $(':root').css('--sl-main-rgba', $(':root').css('--sl-sub-rgba'));
-      $(':root').css('--sl-sub-rgba', temp);
+      $(':root').css('--sl-sub-rgba', temp2);
 
-      let light_dark = (temp == ' #FFFFFF');
-      if (light_dark) {
-        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-dark.svg';
-        document.getElementById('down_arrow').src = 'Resources/down-arrow-dark.png';
-        document.getElementById('email_svg').src = 'Resources/envelope-solid-dark.svg';
-        document.getElementById('github_svg').src = 'Resources/github-brands-dark.svg';
-        document.getElementById('linkedin_svg').src = 'Resources/linkedin-in-brands-dark.svg';
-      } else {
+      let is_main = (temp == ' #121212');
+      if (is_main) {
         document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-light.svg';
         document.getElementById('down_arrow').src = 'Resources/down-arrow-light.png';
         document.getElementById('email_svg').src = 'Resources/envelope-solid-light.svg';
         document.getElementById('github_svg').src = 'Resources/github-brands-light.svg';
         document.getElementById('linkedin_svg').src = 'Resources/linkedin-in-brands-light.svg';
+      } else {
+        document.getElementById('lightbulb').src = 'Resources/lightbulb-regular-dark.svg';
+        document.getElementById('down_arrow').src = 'Resources/down-arrow-dark.png';
+        document.getElementById('email_svg').src = 'Resources/envelope-solid-dark.svg';
+        document.getElementById('github_svg').src = 'Resources/github-brands-dark.svg';
+        document.getElementById('linkedin_svg').src = 'Resources/linkedin-in-brands-dark.svg';
       }
     }
   </script>
