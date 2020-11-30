@@ -86,6 +86,9 @@
     if(window.matchMedia('(max-height: 500px)').matches) {
       sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
     }
+    else if(window.matchMedia('(height: 768px), (width: 768px)').matches) {
+      sl_divider.style.bottom = (sl_footer.offsetHeight * 1.1) + "px";
+    }
     else if(window.matchMedia('(max-height: 840px)').matches) {
       sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
     }
@@ -109,6 +112,9 @@
 
           if(window.matchMedia('(max-height: 500px)').matches) {
             sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
+          }
+          else if(window.matchMedia('(height: 768px), (width: 768px)').matches) {
+            sl_divider.style.bottom = (sl_footer.offsetHeight * 1.1) + "px";
           }
           else if(window.matchMedia('(max-height: 840px)').matches) {
             sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";

@@ -70,12 +70,6 @@ a {
 }
 
 /* MOBILE HANDLERS */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
-  .intro_box {
-    height: 150vh;
-  }
-}
-
 @media (max-width: 850px), (max-width: 1467px) {
   .sl-left {
     width: 50%;
@@ -96,11 +90,21 @@ a {
 
 @media (max-height: 840px) {
   .main {
-    height: 130vh;
+    height: 150vh;
   }
 
   .intro_box {
-    height: 130vh;
+    height: 150vh;
+  }
+}
+
+@media (width : 768px), (height: 768px)  {
+  .main {
+    height: auto;
+  }
+
+  .intro_box {
+    height: 150vh;
   }
 }
 
@@ -141,5 +145,15 @@ a {
 
   .intro_box {
     height: 240vh;
+  }
+}
+
+@media (max-width: 300px), (max-height: 300px) {
+  .main {
+    height: 260vh;
+  }
+
+  .intro_box {
+    height: 260vh;
   }
 }
