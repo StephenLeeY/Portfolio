@@ -12,7 +12,7 @@
 
   <!-- PAGE CONTENT -->
   <body>
-    <div class="main">
+    <div class="main" id="main">
       <div class="intro_box col" id="intro_box">
         <div class="header row justify-content-around" id="header">
           <div class="row">
@@ -83,6 +83,16 @@
     var sl_footer = document.getElementById('sl-footer');
     sl_divider.style.bottom = (sl_footer.offsetHeight * 1.1) + "px";
 
+    if(window.matchMedia('(max-height: 500px)').matches) {
+      sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
+    }
+    else if(window.matchMedia('(max-height: 840px)').matches) {
+      sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
+    }
+    else if(window.matchMedia('(max-height: 1467px)').matches) {
+      sl_divider.style.bottom = (sl_footer.offsetHeight * 1.1) + "px";
+    }
+
     // Mobile device orientation change handler.
     // Credit for listener structure goes to: https://stackoverflow.com/a/49383279
     window.addEventListener('orientationchange', function() {
@@ -96,6 +106,16 @@
             (sl_divider.style.bottom === sl_footer.offsetHeight * 1.1)
             ? (sl_footer.offsetWidth * 1.1) + "px" : (sl_footer.offsetHeight * 1.1) + "px"
           );
+
+          if(window.matchMedia('(max-height: 500px)').matches) {
+            sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
+          }
+          else if(window.matchMedia('(max-height: 840px)').matches) {
+            sl_divider.style.bottom = (sl_footer.offsetHeight * -1.1) + "px";
+          }
+          else if(window.matchMedia('(max-height: 1467px)').matches) {
+            sl_divider.style.bottom = (sl_footer.offsetHeight * 1.1) + "px";
+          }
           window.removeEventListener('resize', afterOrientationChange);
       };
       window.addEventListener('resize', afterOrientationChange);

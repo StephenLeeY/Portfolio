@@ -320,4 +320,9 @@ a {
   .down-arrow {
     width: 5rem;
   }
+
+  .footer-icon {
+    height: 5rem;
+    width: 5rem;
+  }
 }

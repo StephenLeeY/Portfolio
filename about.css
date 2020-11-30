@@ -32,6 +32,10 @@ a {
   position: relative;
 }
 
+.intro_box {
+  overflow: hidden;
+}
+
 #sl-divider {
   width: 100%;
   position: absolute;
@@ -39,12 +43,6 @@ a {
 
 .footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.intro_box {
-  margin-bottom: 7.5rem;
 }
 
 /* BOOTSTRAP OVERRIDES */
@@ -52,7 +50,32 @@ a {
   margin: 0;
 }
 
+/* 4K HANDLERS - 3840 x 2160 */
+@media (min-width: 2250px) {
+  .footer-icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+/* DESKTOP HANDLERS */
+@media (max-width: 1467px) {
+  .main {
+    height: auto;
+  }
+
+  .intro_box {
+    height: 125vh;
+  }
+}
+
 /* MOBILE HANDLERS */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  .intro_box {
+    height: 150vh;
+  }
+}
+
 @media (max-width: 850px), (max-width: 1467px) {
   .sl-left {
     width: 50%;
@@ -71,16 +94,52 @@ a {
   }
 }
 
-@media (max-width: 850px) and (orientation: landscape) {
+@media (max-height: 840px) {
+  .main {
+    height: 130vh;
+  }
+
+  .intro_box {
+    height: 130vh;
+  }
 }
 
-@media (max-height: 500px) and (orientation: landscape) {
+@media (max-height: 600px) {
+  .main {
+    height: 125vh;
+  }
+
+  .intro_box {
+    height: 125vh;
+  }
 }
 
-/* DESKTOP HANDLERS */
-@media (max-width: 1467px) {
+@media (max-height: 575px) {
+  .main {
+    height: 200vh;
+  }
+
+  .intro_box {
+    height: 200vh;
+  }
 }
 
-/* 4K HANDLERS - 3840 x 2160 */
-@media (min-width: 2250px) {
+@media (max-height: 400px) {
+  .main {
+    height: 200vh;
+  }
+
+  .intro_box {
+    height: 200vh;
+  }
+}
+
+@media (max-height: 350px) {
+  .main {
+    height: 240vh;
+  }
+
+  .intro_box {
+    height: 240vh;
+  }
 }
