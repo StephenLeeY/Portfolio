@@ -183,25 +183,6 @@
 
   <!-- JAVASCRIPT -->
   <script>
-    var intro_box = document.getElementById("intro_box");
-    intro_box.style.height = window.innerHeight + "px";
-
-    // Mobile device orientation change handler.
-    // Credit for listener structure goes to: https://stackoverflow.com/a/49383279
-    window.addEventListener('orientationchange', function() {
-      var afterOrientationChange = function() {
-          // Switch height and width of intro_box element.
-          intro_box.style.height = (
-            (intro_box.style.height === window.innerHeight + "px")
-            ? window.innerWidth + "px" : window.innerHeight + "px"
-          );
-          window.removeEventListener('resize', afterOrientationChange);
-      };
-      window.addEventListener('resize', afterOrientationChange);
-    });
-  </script>
-
-  <script>
     // Light/Dark mode switch handler.
     function switch_mode() {
       let temp = $(':root').css('--sl-main');

@@ -20,6 +20,10 @@ a {
   padding-right: 4rem;
 }
 
+.intro_box {
+  min-height: 100vh;
+}
+
 .about-me {
   width: 100%;
 }

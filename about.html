@@ -75,10 +75,6 @@
 
   <!-- JAVASCRIPT -->
   <script>
-    var intro_box = document.getElementById("intro_box");
-    intro_box.style.height = window.innerHeight + "px";
-    intro_box.style.minHeight = "100vh";
-
     var sl_header = document.getElementById('header');
     var sl_content = document.getElementById('about-me');
     sl_content.style.paddingTop = (sl_header.offsetHeight * 1.1) + "px";
@@ -92,10 +88,6 @@
     window.addEventListener('orientationchange', function() {
       var afterOrientationChange = function() {
           // Switch height and width of elements.
-          intro_box.style.height = (
-            (intro_box.style.height === window.innerHeight + "px")
-            ? window.innerWidth + "px" : window.innerHeight + "px"
-          );
           sl_content.style.paddingTop = (
             (sl_content.style.paddingTop === sl_header.offsetHeight * 1.1)
             ? (sl_header.offsetWidth * 1.1) + "px" : (sl_header.offsetHeight * 1.1) + "px"
