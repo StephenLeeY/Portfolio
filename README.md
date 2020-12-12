@@ -10,5 +10,5 @@
 </p>
 
 <p align="center">
-<img src="Resources/website-preview.png" width="375"/>
+  <img src="Resources/website-preview.PNG" width="100%"/>
 </p>
