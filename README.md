@@ -6,7 +6,7 @@
 
 <h4 align="center">Portfolio showcasing my work in <i>CSCI 1300 - User Interfaces and User Experience</i>.</h4>
 <p align="center">
-  Check it out <a href="https://stephenleegit.github.io/Portfolio/">here</a> or <a href="https://vast-peak-95885.herokuapp.com/">here</a>!
+  Check it out <a href="https://stephenleey.github.io/Portfolio">here</a>!
 </p>
 
 <p align="center">
